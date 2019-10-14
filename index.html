@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Lightboxed</title>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="js/lightboxed/lightboxed.css" rel="stylesheet" />
+	<script src="js/lightboxed/lightboxed.js"></script>
+	
+	<style>
+		img { max-width: 100%; }
+	</style>
+	
+</head>
+<body>
+
+	<img class="lightboxed" rel="group1" src="img/01_small.jpg" data-link="img/01.jpg" alt="A delicious Burger" data-caption="A delicious Burger" />
+	<img class="lightboxed" rel="group1" src="img/02_small.jpg" data-link="img/02.jpg" alt="Cookies!" data-caption="Cookies!" />
+	<img class="lightboxed" rel="group1" src="img/03_small.jpg" data-link="img/03.jpg" alt="We're going nuts." />
+	<img class="lightboxed" rel="group1" src="img/04_small.jpg" data-link="img/04.jpg" alt="This cake isn't a lie." />
+	<img class="lightboxed" rel="group1" src="img/05_small.jpg" data-link="img/05.jpg" alt="Triplets." />
+	<img class="lightboxed" rel="group1" src="img/06_small.jpg" data-link="img/06.jpg" alt="Yummy sandwich" />
+	<img class="lightboxed" rel="group1" src="img/07_small.jpg" data-link="img/07.jpg" alt="Who says no to pizza?" />
+	<img class="lightboxed" rel="group1" src="img/08_small.jpg" data-link="http://www.youtube.com/embed/Rix_3b9ThLI?list=PL8zglt-LDl-iwBHEl3Pw1IhWGp9cfgMrc" data-width="560" data-height="315" />
+	<img class="lightboxed" rel="group2" src="img/09_small.jpg" data-link="img/09.jpg" alt="Asian dinner" />
+	<img class="lightboxed" rel="group2" src="img/10_small.jpg" alt="Fresh bread" />
+	<img class="lightboxed" rel="group2" src="img/11_small.jpg" data-link="img/11.jpg" alt="Fruity" />
+	<img src="img/12_small.jpg" class="lightboxed" data-link="img/12.jpg" />
+	<img src="img/13_small.jpg" class="lightboxed" data-link="img/13.jpg" />
+	<img src="img/14_small.jpg" class="lightboxed" data-link="img/14.jpg" />
+	<img src="img/15_small.jpg" class="lightboxed" data-link="img/15.jpg" />
+	<br /><a href="img/01.jpg" class="lightboxed">Text Link</a>
+	<br /><a href="#inline" class="lightboxed">Inline content</a>
+	
+	
+	<div id="inline" style="display: none;"><div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff;">Some inline content</div></div>
+
+</body>
+</html>

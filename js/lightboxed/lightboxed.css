@@ -1,0 +1,16 @@
+.lightboxed { cursor: pointer; }
+div#lightboxed--cache { position: fixed; left: -99999999px; }
+div#lightboxed--container { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: #000; background: rgba(0,0,0,0.9); z-index: 9001; }
+div#lightboxed--stage { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; overflow: hidden; }
+div#lightboxed--content { position: absolute; top: 0; left: 0; }
+div#lightboxed--content .lightboxed--frame { position: absolute; top: 0; left: 0; }
+div#lightboxed--content .lightboxed--frame img , div#lightboxed--content .lightboxed--frame iframe { position: absolute; top: 50%; left: 50%; max-width: 100%; max-height: 100%; -ms-transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%); border: 0; }
+div#lightboxed--content .lightboxed--frame .lightboxed--caption { position: absolute; bottom: 0; right: 0; padding: 10px; background: #000; background: rgba(0,0,0,0.9); color: #fff!important; }
+div#lightboxed--thumbs { display: none; position: absolute; bottom: 0; left: 50%; -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+div#lightboxed--thumbs .lightboxed--thumb { float: left; overflow: hidden; border-radius: 2px; cursor: pointer; }
+div#lightboxed--thumbs .lightboxed--thumb .lightboxed--thumb_border { position: relative; width: 100%; height: 100%; background: #fff; background: rgba(255,255,255,0.4); transition: 500ms background;  }
+div#lightboxed--thumbs .lightboxed--thumb.lightboxed--active .lightboxed--thumb_border { background: rgba(255,255,255,0.7); transition: 500ms background; }
+div#lightboxed--thumbs .lightboxed--thumb img { position: absolute; top: 50%; left: 50%; max-width: 100%; max-height: 100%; -ms-transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%); }
+div#lightboxed--bttn_close { position: absolute; top: 10px; right: 10px; background: #fff; background: rgba(255,255,255,0.6); background-image: url(controls.png); background-repeat: no-repeat; background-size: auto 100%; background-position: 100%; width: 30px; height: 30px; border-radius: 100%; cursor: pointer; }
+div#lightboxed--bttn_next { display: none; position: absolute; top: 50%; right: 10px; background: #fff; background: rgba(255,255,255,0.6); background-image: url(controls.png); background-repeat: no-repeat; background-size: auto 100%; background-position: 50%; width: 30px; height: 30px; border-radius: 100%; cursor: pointer; -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+div#lightboxed--bttn_prev { display: none; position: absolute; top: 50%; left: 10px; background: #fff; background: rgba(255,255,255,0.6); background-image: url(controls.png); background-repeat: no-repeat; background-size: auto 100%; background-position: 0%; width: 30px; height: 30px; border-radius: 100%; cursor: pointer; -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); }
