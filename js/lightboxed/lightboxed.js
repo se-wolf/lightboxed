@@ -130,7 +130,6 @@
 		open : function ( event , element ) {
 			var that = this;
 			if ( this.cache.thumbs && this.options.thumbs !== false ) { 
-				console.log(this);
 				this.lightbox.thumbs
 					.width( ( this.options.thumbs.size + this.options.thumbs.spacing ) * ( this.cache.thumbs.children().length ) )
 					.height( this.options.thumbs.size + 2 * this.options.thumbs.spacing )
