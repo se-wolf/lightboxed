@@ -1,5 +1,3 @@
-
-test
 # Yet another lightbox
 
 ## Initialisation
